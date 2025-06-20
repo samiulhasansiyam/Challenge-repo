@@ -20,9 +20,13 @@ int main ()
     {
         cout << "Interval (75,100]";
     }
-    else if(n<0)
+    else if(n<0 || 100 <n)
     {
         cout << "Out of Intervals";
+    }
+    else if(n<25 && n > 0)
+    {
+        cout << "Interval [0,25]";
     }
     return 0;
 }
