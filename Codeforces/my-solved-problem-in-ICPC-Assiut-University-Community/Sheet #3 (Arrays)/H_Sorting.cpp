@@ -25,14 +25,3 @@ int main ()
     }
     return 0;
 }
-
-    // for(int i=0; i<n ; i++)
-    // {
-    //     for(int j=i+1 ; j<n ; j++)
-    //     {
-    //         if (a[j] < a[i])
-    //         {
-    //             swap(a[j],a[i]);
-    //         }
-    //     }
-    // }
