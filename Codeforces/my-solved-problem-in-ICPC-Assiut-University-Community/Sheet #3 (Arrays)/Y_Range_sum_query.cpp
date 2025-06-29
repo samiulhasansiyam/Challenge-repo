@@ -1,21 +1,24 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 int main() 
 {
-    int n, q;
-    cin >> n >> q;
-    int a[n + 1], prefix[n + 1];
-    prefix[0] = 0;
-    for (int i = 1; i <= n; i++) 
+    int n, q; cin >> n >> q;
+
+    vector<int> arr(n);
+    for(auto &a : arr) cin >> a;
+
+    vector<long long> prefix(n + 1, 0);
+
+    for(int i = 0; i < n; i++)
     {
-        cin >> a[i];
-        prefix[i] = prefix[i - 1] + a[i];
+        prefix[i + 1] = prefix[i] + arr[i];
     }
-    while (q--) 
+    while(q--)
     {
-        int l, r;
-        cin >> l >> r;
-        cout << prefix[r] - prefix[l - 1] << "\n";
+        int l, s; cin >> l >> s;
+
+        cout << prefix[s] - prefix[l - 1] << "\n";
     }
     return 0;
 }
