@@ -1,15 +1,17 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
-int main ()
+int main() 
 {
-    int n,sum=0;
+    int n; 
     cin >> n;
-    string num;
-    cin >> num;
-    for(int i=0;i<n;i++)
+    string s;
+    cin >> s;
+    int sum = 0;
+
+    for(char c : s)
     {
-        int p=num[i]-'0';
-        sum=sum+p;
+       int temp = c - '0';
+       sum = sum + temp;
     }
     cout << sum << "\n";
     return 0;
