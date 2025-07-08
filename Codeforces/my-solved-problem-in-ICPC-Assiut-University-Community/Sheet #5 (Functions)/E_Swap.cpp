@@ -12,3 +12,24 @@ int main()
     swap_two(a, b);
     return 0;
 }
+
+
+
+
+
+//time limit
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// int swapTwoNumber(int a, int b)
+// {
+//     swap(a, b);
+//     cout << a << " "<< b << endl;
+// }
+// int main()
+// {
+//     int x, y;
+//     cin >> x >> y;
+//     swapTwoNumber(x, y);
+//     return 0;
+// }
