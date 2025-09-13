@@ -2,21 +2,27 @@
 using namespace std;
 int main()
 {
-    //not solved
     int n;
     cin >> n;
 
-    if (n == 1)
+    for (int i = 1; i <= n; i++)
     {
-        cout << "I hate it" << endl;
-    }
-    else if (n == 2)
-    {
-        cout << "I hate that I love it" << endl;
-    }
-    else if (n == 3)
-    {
-        cout << "I hate that I love that I hate it" << endl;
+        if (i % 2 != 0)
+        {
+            cout << "I hate ";
+        }
+        else
+        {
+            cout << "I love ";
+        }
+        if (n == i)
+        {
+            cout << "it ";
+        }
+        else
+        {
+            cout << "that ";
+        }
     }
     return 0;
 }
