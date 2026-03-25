@@ -27,20 +27,47 @@
 //     return 0;
 // }
 
+// #include <bits/stdc++.h>
+// using namespace std;
+
+// int main()
+// {
+//     int n;
+//     cin >> n;
+
+//     int X = 0;
+//     while (n--)
+//     {
+//         string s;
+
+//         cin >> s;
+//         if (s[1] == '+')
+//         {
+//             X++;
+//         }
+//         else if (s[1] == '-')
+//         {
+//             X--;
+//         }
+//     }
+//     cout << X << endl;
+
+//     return 0;
+// }
+
+
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+int calculateX(int n)
 {
-    int n;
-    cin >> n;
-
     int X = 0;
+
     while (n--)
     {
         string s;
-
         cin >> s;
+
         if (s[1] == '+')
         {
             X++;
@@ -50,7 +77,17 @@ int main()
             X--;
         }
     }
-    cout << X << endl;
+
+    return X;
+}
+
+int main()
+{
+    int n;
+    cin >> n;
+
+    int result = calculateX(n);
+    cout << result << endl;
 
     return 0;
 }
