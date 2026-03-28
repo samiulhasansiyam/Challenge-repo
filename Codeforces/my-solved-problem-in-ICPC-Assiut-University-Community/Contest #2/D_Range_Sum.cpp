@@ -1,15 +1,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int t;
+int main()
+{
+    long long t;
     cin >> t;
-    while (t--) {
+
+    while(t--)
+    {
         long long L, R;
         cin >> L >> R;
-        long long n = R - L + 1;
-        long long sum = n * (L + R) / 2;
-        cout << sum << endl;
+
+        long long sumR = R * (R + 1) / 2;
+        long long sumL = (L - 1) * L / 2;
+
+        cout << sumR - sumL << endl;
     }
-    return 0;
 }
